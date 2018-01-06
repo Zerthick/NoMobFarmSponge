@@ -53,13 +53,14 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.time.Duration;
 import java.time.Instant;
-import java.util.*;
+import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Plugin(
         id = "nomobfarm",
         name = "NoMobFarm",
-        description = "A simple Minecraft Anit Mob Autofarm plugin",
+        description = "A simple Minecraft plugin to prevent Auto-Mobfarms",
         authors = {
                 "Zerthick"
         }
