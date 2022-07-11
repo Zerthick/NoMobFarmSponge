@@ -22,18 +22,18 @@ import org.spongepowered.plugin.metadata.model.PluginDependency
 
 plugins {
     `java-library`
-    id("org.spongepowered.gradle.plugin") version "2.0.1"
+    id("org.spongepowered.gradle.plugin") version "2.0.2"
 }
 
 group = "io.github.zerthick"
-version = "1.1.1"
+version = "1.2.0"
 
 repositories {
     mavenCentral()
 }
 
 sponge {
-    apiVersion("8.0.0")
+    apiVersion("9.0.0")
     license("GPLV3")
     loader {
         name(PluginLoaders.JAVA_PLAIN)
@@ -58,7 +58,7 @@ sponge {
     }
 }
 
-val javaTarget = 8 // Sponge targets a minimum of Java 8
+val javaTarget = 17 // Sponge targets a minimum of Java 17
 java {
     sourceCompatibility = JavaVersion.toVersion(javaTarget)
     targetCompatibility = JavaVersion.toVersion(javaTarget)
